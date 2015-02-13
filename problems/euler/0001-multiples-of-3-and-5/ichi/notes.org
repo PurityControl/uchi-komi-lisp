@@ -1,0 +1,3 @@
+#+TITLE: Notes for first iteration of multiples
+
+1st solution getting used to lisp testing framework and namespacing
