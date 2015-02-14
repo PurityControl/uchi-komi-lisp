@@ -1,0 +1,6 @@
+#+TITLE: Notes for first iteration of Even Fibonnaci's
+
+1st solution proposed
+- generate list of fibanicci's up to limit
+- remove odd numbers from list
+- sum list
