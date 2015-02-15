@@ -1,0 +1,6 @@
+#+TITLE: Notes for first iteration of Largest Prime Factor
+
+1st solution proposed
+- keep getting lowest prime factor for number
+- stop when product of all factors equal the number
+- extract largest prime factor from list
