@@ -8,7 +8,7 @@
 (in-package #:largest-prime-factor-test)
 
 (define-test primes-to-20
-  (assert-equal '(2 3 5 7 11 13 17 19) (largest-prime-factor:primes-to 20)))
+  (assert-equal '(19 17 13 11 7 5 3 2) (largest-prime-factor:primes-to 20)))
 
 (define-test largest-prime-for-13195
   (assert-equal 29 (largest-prime-factor:largest-factor 13195)))
