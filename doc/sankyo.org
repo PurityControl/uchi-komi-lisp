@@ -1,1 +1,29 @@
-#+TITLE: Dai-nikyo (Group 3) - Testing
+#+TITLE: Dai-nikyo (Group 3) - Resources / Cheat Sheets
+
+* Resources
+
+** Getting Started
+
+[[http://www.cliki.net][Cliki]] has resources on [[http://www.cliki.net/Getting%20Started][getting started]] as well as other 
+good information.
+
+** Specification
+
+The common lisp specification is documented in the book 
+[[https://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html][Common Lisp the Language, 2nd Edition]]
+
+This specfication has been made more accessible in html by lisp works
+as the [[http://www.lispworks.com/documentation/HyperSpec/Front/index_tx.htm][the hyperspec]]
+
+
+* Cheat Sheets
+
+** Language Notes
+
+*** Sequence predicates
+You can check each element of a sequence with a predicate using 
+- every
+- some
+- notevery
+- notany
+
