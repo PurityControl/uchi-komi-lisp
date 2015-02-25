@@ -17,6 +17,15 @@ as the [[http://www.lispworks.com/documentation/HyperSpec/Front/index_tx.htm][th
 
 
 * Cheat Sheets
+There is a [[http://hyperpolyglot.org/lisp][cheat sheet]] comparing all the 4 main lisps:
+- Common Lisp (SBCL)
+- Scheme (Racket)
+- Slojure
+- Emacs Lisp
+It shows how each language implements a function or feature.
+If you know what a function is called in one language, you can look
+it up and see what the equivalents are in the other languages.
+
 
 ** Language Notes
 
