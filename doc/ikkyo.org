@@ -1,1 +1,40 @@
 #+TITLE: Dai-ikkyo (group 1) - Setting up the environment
+
+* Lisp Installaion
+** SBCL
+*** Ubuntu
+: sudo apt-get install sbcl
+*** OpenBSD
+: sudo pkg_add sbcl
+
+* Package Management
+Most external libraries seem to use quicklisp for package
+management. It seems to be an essential part of a modern
+lisp setup.
+
+Documentation on how to set it up is availabe on the 
+[[http://www.quicklisp.org/beta][website]] along with good information on how to use it. 
+
+** Quick set up guide
+First download quicklisp [[http://beta.quicklisp.org/quicklisp.lisp][file]] 
+- =curl -O http://beta.quicklisp.org/quicklisp.lisp=
+- =curl -O http://beta.quicklisp.org/quicklisp.lisp.asc=
+- =gpg --verify quicklisp.lisp.asc=
+
+launch your lisp (sbcl) and load the lisp file
+- =sbcl --load quicklisp.lisp=
+- =(quicklisp-quickstart:install)=
+- =(ql:add-to-init-file)=
+
+while your there configure slime so it can use quicklisp
+- =(ql:quickload "quicklisp-slime-helper")=
+- then follow the on screen instructions
+
+* Emacs
+Emacs and slime make development much easier for lisp
+as you can load your files straight into a slime environment.
+This makes iterative development much easier. Test files 
+can be loaded into slime too making feedback times very quick.
+
+Use the lisp environment in the [[https://github.com/PurityControl/emacs-envs][emacs-envs]] repo to setup
+a prebuilt enviroment.
