@@ -1,6 +1,26 @@
 #+TITLE: Notes for first iteration of Largest Prime Factor
 
-1st solution proposed
+* 1st solution proposed
 - keep getting lowest prime factor for number
 - stop when product of all factors equal the number
 - extract largest prime factor from list
+
+* Retrospective
+Tried a solution using global variables but it got more and more confusing.
+The ideas was to memoize primes rather than recalculate them at the start
+of each new prime factor calculation.
+
+** Ways to improve
+- only check for primes up to the square root of previous primes
+- memoize k value and primes so the same k values and primes are not 
+  recalculated
+
+** Lessons
+- should have leaned on test more heavily and early on would have prevented
+  wasted time
+- functional solutions seem easier to build up (probably because of ease of
+  testing)
+- the above would have helped focus on a bottom up design which would have
+  created a working implementation more quickly
+
+
