@@ -4,10 +4,6 @@
 	   #:first-factor #:accumulate-factors))
 (in-package #:largest-prime-factor)
 
-(defparameter *k* 1)
-(defparameter *primes* '(2 3))
-(defparameter *prime-factors* '())
-
 (defun prime? (number previous-primes)
   ;;TODO only check up to sqaure root of primes
   (notany (lambda (x) (zerop (mod number x))) previous-primes))
@@ -29,14 +25,13 @@
 (defun accumulate-factors (number prime-factors)
   (let ((prime-factor-product (apply #'* prime-factors)))
     (if (eq prime-factor-product number)
-	(reduce #'max prime-factors)
+	prime-factors
 	(accumulate-factors 
 	 number 
 	 (cons 
 	  (first-factor (/ number prime-factor-product) 1 '(2 3))
 	  prime-factors)))))
 
-
 (defun largest-factor (number)
-  ;; TODO implement me
-  (accumulate-factors number '()))
+  (let ((list-of-factors (accumulate-factors number '())))
+    (reduce #'max list-of-factors)))

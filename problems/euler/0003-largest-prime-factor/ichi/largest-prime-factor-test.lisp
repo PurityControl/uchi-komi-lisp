@@ -39,10 +39,10 @@
   (assert-equal 29 (largest-prime-factor:largest-factor 13195)))
 
 (define-test accumulate-factors-for-6
-  (assert-equal 3 (largest-prime-factor:accumulate-factors 6 '(2 3))))
+  (assert-equal '(2 3) (largest-prime-factor:accumulate-factors 6 '(2 3))))
 
 (define-test accumulate-factors-for-18
-  (assert-equal 3 (largest-prime-factor:accumulate-factors 18 '(2 3))))
+  (assert-equal '(3 2 3) (largest-prime-factor:accumulate-factors 18 '(2 3))))
 
 (define-test largest-prime-for-600851475143
   (assert-equal 6857 (largest-prime-factor:largest-factor 600851475143)))
