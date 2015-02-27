@@ -7,8 +7,27 @@
 
 (in-package #:largest-prime-factor-test)
 
-(define-test primes-to-20
-  (assert-equal '(19 17 13 11 7 5 3 2) (largest-prime-factor:primes-to 20)))
+(define-test kvals-for-1
+  (assert-equal '(5 7) (largest-prime-factor:kvals-from-k 1)))
+
+(define-test kvals-for-2
+  (assert-equal '(11 13) (largest-prime-factor:kvals-from-k 2)))
+
+(define-test primes-from-k-for-1
+  (assert-equal '(5 7) (largest-prime-factor:primes-from-k 1 '(2 3))))
+
+(define-test primes-from-k-for-4
+  (assert-equal 
+   '(23) 
+   (largest-prime-factor:primes-from-k 
+    4 
+    '(2 3 5 7 11 13 17 19))))
+
+(define-test first-factor-for-6
+  (assert-equal 2 (largest-prime-factor:first-factor 6)))
+
+(define-test first-factor-for-7
+  (assert-equal nil (largest-prime-factor:first-factor 7)))
 
 (define-test largest-prime-for-13195
   (assert-equal 29 (largest-prime-factor:largest-factor 13195)))
