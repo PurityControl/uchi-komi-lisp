@@ -1,6 +1,6 @@
 (defpackage #:largest-palindrome-product
   (:use #:cl)
-  (:export #:products))
+  (:export #:products #:palindrome-p))
 (in-package #:largest-palindrome-product)
 
 (defun products (start end)
@@ -12,3 +12,6 @@
 		 (t (cons product (acc-prods pr1 (1+ pr2))))))))
     (acc-prods start start)))
 
+(defun palindrome-p (number)
+  (let ((num (write-to-string number)))
+    (string= num (reverse num))))

@@ -23,6 +23,12 @@
 (define-test product-length-for-1-to-20
   (assert-equal 400 (length (largest-palindrome-product:products 1 20))))
 
+(define-test palindrome-p-true
+  (assert-true (largest-palindrome-product:palindrome-p 9339)))
+
+(define-test palindrome-p-false
+  (assert-false (largest-palindrome-product:palindrome-p 93391)))
+
 (let ((*print-errors* t)
       (*print-failures* t))
   (run-tests :all :largest-palindrome-product-test))
