@@ -1,0 +1,33 @@
+#+TITLE: Notes for first iteration of Largest Palindrome Product
+
+* 1st solution proposed
+built without much regard to memory consumed
+- create list of all 3 digit products (810,000 entries)
+- filter palindromes
+- reduce using max
+
+* Contracts
+
+** methods
+: products(start end)
+: palindrome-p(number)
+: largest-palindrome-product(from to)
+
+* Retrospective
+1st solution poorly implemented creation of list preventing tail call
+optimisation. When implemented list as accumulator passed through
+method calls the stack problems disappeared.
+
+** Ways to improve
+- could only accumulate products that are palindromes making the
+  list much shorter
+
+** Lessons
+- used testing more appropriately allowing quick bottom up implementation
+- always think about TCO when building lists
+- thinking about list generation recursively rather than looping made me
+  think about all the base cases and it seemed easier to avoid off by 1
+  errors more commonly seen in loops
+
+
+
