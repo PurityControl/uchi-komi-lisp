@@ -29,6 +29,14 @@
 (define-test palindrome-p-false
   (assert-false (largest-palindrome-product:palindrome-p 93391)))
 
+(define-test largest-palindrome-product-2-digit
+  (assert-equal 9009 
+		(largest-palindrome-product:largest-palindrome-product 10 99)))
+
+;(define-test largest-palindrome-product-3-digit
+;  (assert-equal 906609 
+;		(largest-palindrome-product:largest-palindrome-product 100 999)))
+
 (let ((*print-errors* t)
       (*print-failures* t))
   (run-tests :all :largest-palindrome-product-test))

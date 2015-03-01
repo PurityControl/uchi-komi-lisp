@@ -1,6 +1,6 @@
 (defpackage #:largest-palindrome-product
   (:use #:cl)
-  (:export #:products #:palindrome-p))
+  (:export #:products #:palindrome-p #:largest-palindrome-product))
 (in-package #:largest-palindrome-product)
 
 (defun products (start end)
@@ -15,3 +15,7 @@
 (defun palindrome-p (number)
   (let ((num (write-to-string number)))
     (string= num (reverse num))))
+
+(defun largest-palindrome-product (start end)
+  (apply #'max
+	 (remove-if-not #'palindrome-p (products start end))))
