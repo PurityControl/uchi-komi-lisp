@@ -1,0 +1,23 @@
+#+TITLE: Notes for first iteration of Largest Palindrome Product
+
+* 1st solution proposed
+built without much regard to memory consumed
+- create list of all 3 digit products (810,000 entries)
+- filter palindromes
+- reduce using max
+
+* Contracts
+
+** methods
+: products(start end)
+: palindrome-p(number)
+: largest-palindrome-product(from to)
+
+* Retrospective
+
+** Ways to improve
+
+** Lessons
+
+
+
