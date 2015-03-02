@@ -13,11 +13,17 @@
 : smallest-multiple-for(lo-numbers)
 
 * Retrospective
-
+Another example of clarity brought out through recursion.
+The first ruby implementation uses a lazy sequence implementation
+which turns out to be unperformant.
+This solution was very quick 
 
 ** Ways to improve
+Not sure as I like the solution we have here.
 
 ** Lessons
+- again bottom up thinking along with tests helps tease out the api
+  quickly and cleanly
 
 
 
