@@ -1,0 +1,24 @@
+#+TITLE: Notes for first iteration of Smallest Multiple
+
+* 1st solution proposed
+
+- create a predicate returning true if 1 up to limit is divisible by the number
+- create recursive function incrementing by largest number if predicate is
+  not true otherwise returning the number
+
+* Contracts
+
+** methods
+: common-multiple-p(number lo-numbers)
+: smallest-multiple-for(lo-numbers)
+
+* Retrospective
+
+
+** Ways to improve
+
+** Lessons
+
+
+
+
