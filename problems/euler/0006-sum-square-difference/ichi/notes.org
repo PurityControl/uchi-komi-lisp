@@ -1,0 +1,14 @@
+#+TITLE: Notes for first iteration of Difference of Square Sums
+
+* 1st solution proposed
+
+- difference between
+  - sum map of squares
+  - sqaure sum of list
+
+
+
+
+
+
+
