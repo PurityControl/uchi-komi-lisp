@@ -1,0 +1,11 @@
+#+TITLE: Notes for first iteration of 10001st prime
+
+* 1st solution proposed
+- collect primes using kvalues technique adding each to list until
+  list is 10001 primes long
+
+* Retrospective
+
+piggy backed on earlier implementation of prime generation using
+kvals initially created for problem 0003 - largest prime factor
+
